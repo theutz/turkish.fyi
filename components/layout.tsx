@@ -9,7 +9,7 @@ export default function Layout({ children }: Props) {
   const [description] = useSiteDescription();
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-4">
       <Head>
         <title>
           {title} | {description}
