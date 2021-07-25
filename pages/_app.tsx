@@ -1,13 +1,15 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Layout from "../components/layout";
-import * as siteData from "../data/site";
+import { SiteDataProvider } from "../hooks/useSiteData";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout siteData={siteData}>
-      <Component {...pageProps} siteData={siteData} />
-    </Layout>
+    <SiteDataProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </SiteDataProvider>
   );
 }
 export default MyApp;

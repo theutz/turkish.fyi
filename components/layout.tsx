@@ -1,9 +1,15 @@
+import React from "react";
 import Head from "next/head";
+import { useSiteTitle, useSiteDescription } from "../hooks/useSiteData";
 
-export default function Layout({ children, siteData }) {
-  const { title, description } = siteData;
+type Props = { children: React.ReactNode };
+
+export default function Layout({ children }: Props) {
+  const [title] = useSiteTitle();
+  const [description] = useSiteDescription();
+
   return (
-    <>
+    <div className="container mx-auto">
       <Head>
         <title>
           {title} | {description}
@@ -16,6 +22,6 @@ export default function Layout({ children, siteData }) {
       </Head>
 
       <main>{children}</main>
-    </>
+    </div>
   );
 }
