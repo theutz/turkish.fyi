@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:watch": "tsc --watch --noEmit"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
     "constate": "^3.3.0",
     "next": "11.0.1",
     "react": "17.0.2",

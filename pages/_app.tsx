@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import Layout from "../components/layout";
 import { SiteDataProvider } from "../hooks/useSiteData";
 import { MDXProvider } from "@mdx-js/react";
-import { components } from "../components/mdx";
+import { components } from "../components/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
