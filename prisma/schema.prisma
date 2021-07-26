@@ -11,8 +11,9 @@ generator client {
 }
 
 model Postpositions {
-  id          Int       @default(autoincrement()) @id
-  word        String    @unique
-  definitions String[]
-  baseNoun    Json
+  id                 Int    @default(autoincrement()) @id
+  word               String @unique
+  definitions        String[]
+  baseNoun           Json
+  baseNounDefinition String
 }
