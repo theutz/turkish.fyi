@@ -9,7 +9,7 @@ export default function Layout({ children }: Props) {
   const [description] = useSiteDescription();
 
   return (
-    <div className="container mx-auto px-4">
+    <div>
       <Head>
         <title>
           {title} | {description}
@@ -21,7 +21,13 @@ export default function Layout({ children }: Props) {
         />
       </Head>
 
-      <main>{children}</main>
+      <header className="bg-gradient-to-b from-red-600 to-red-500 text-white">
+        <div className="container px-4 py-2 mx-auto">
+          <h1 className="text-xl">{title}</h1>
+        </div>
+      </header>
+
+      <main className="container px-4 mx-auto">{children}</main>
     </div>
   );
 }
