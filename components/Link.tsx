@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import NextLink, { LinkProps } from "next/link";
-import classnames from "classnames";
 
 export type Props = LinkProps & {
   children: ReactNode;
@@ -9,7 +8,7 @@ export type Props = LinkProps & {
 export function Link({ children, className, ...props }: Props) {
   return (
     <NextLink {...props}>
-      <a className={classnames(className)}>{children}</a>
+      <a className="text-red-600">{children}</a>
     </NextLink>
   );
 }
