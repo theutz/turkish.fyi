@@ -25,7 +25,9 @@ export default function Layout({ children }: Props) {
       <header className="bg-gradient-to-b from-red-600 to-red-500 text-white mb-4">
         <div className="container px-4 py-2 mx-auto">
           <h1 className="text-xl">
-            <Link href="/">{title}</Link>
+            <Link href="/" className="text-white">
+              {title}
+            </Link>
           </h1>
         </div>
       </header>
