@@ -6,12 +6,7 @@ export type Props = LinkProps & {
   color: `white` | `red-600`;
 };
 
-export function Link({
-  children,
-  color = "red-600",
-  className,
-  ...props
-}: Props) {
+export function Link({ children, color = "red-600", ...props }: Props) {
   return (
     <NextLink {...props}>
       <a className={`text-${color}`}>{children}</a>
