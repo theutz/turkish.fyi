@@ -1,14 +1,15 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Layout from "../components/layouts/Default";
+import { MDXProvider } from "@mdx-js/react";
 import { SiteDataProvider } from "../hooks/useSiteData";
+import { components } from "../components/theme";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <SiteDataProvider>
-      <Layout>
+      <MDXProvider components={components}>
         <Component {...pageProps} />
-      </Layout>
+      </MDXProvider>
     </SiteDataProvider>
   );
 }
