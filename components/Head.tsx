@@ -2,10 +2,6 @@ import { ReactNode } from "react";
 import { useSiteTitle, useSiteDescription } from "../hooks/useSiteData";
 import NextHead from "next/head";
 
-type Props = {
-  children: ReactNode;
-};
-
 export function Head() {
   const [title] = useSiteTitle();
   const [description] = useSiteDescription();

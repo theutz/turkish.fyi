@@ -2,11 +2,7 @@ import { ReactNode } from "react";
 import { useSiteTitle, useSiteDescription } from "../hooks/useSiteData";
 import Link from "../components/Link";
 
-type Props = {
-  children: ReactNode;
-};
-
-export function Header({ children }: Props) {
+export function Header() {
   const [title] = useSiteTitle();
   return (
     <header className="mb-4 text-white bg-gradient-to-b from-red-600 to-red-500">

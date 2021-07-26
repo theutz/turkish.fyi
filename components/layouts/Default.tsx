@@ -1,15 +1,16 @@
 import React from "react";
-import { useSiteTitle, useSiteDescription } from "../hooks/useSiteData";
+import { useSiteTitle, useSiteDescription } from "../../hooks/useSiteData";
 import { MDXProvider } from "@mdx-js/react";
-import { components } from "../components/theme";
-import Head from "../components/Head";
-import Header from "../components/Header";
+import { components } from "../theme";
+import Head from "../Head";
+import Header from "../Header";
+import Container from "../Container";
 
 type Props = { children: React.ReactNode };
 
 export default function Layout({ children }: Props) {
   return (
-    <MDXProvider components={{ ...components }}>
+    <MDXProvider components={components}>
       <>
         <Head />
         <Header />
