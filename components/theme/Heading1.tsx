@@ -5,5 +5,5 @@ type Props = {
 };
 
 export function Heading1({ children }: Props) {
-  return <h1 className="text-red-500">{children}</h1>;
+  return <h1 className="text-3xl pb-4">{children}</h1>;
 }

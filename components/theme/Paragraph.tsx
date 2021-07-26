@@ -5,5 +5,5 @@ type Props = {
 };
 
 export function Paragraph({ children }: Props) {
-  return <p className="text-blue-500">{children}</p>;
+  return <p className="pb-1">{children}</p>;
 }
