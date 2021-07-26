@@ -12,7 +12,7 @@ export function Default({ children }: Props) {
     <>
       <Head />
       <Header />
-      <Container>{children}</Container>;
+      <Container>{children}</Container>
     </>
   );
 }
