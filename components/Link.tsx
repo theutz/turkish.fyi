@@ -3,12 +3,18 @@ import NextLink, { LinkProps } from "next/link";
 
 export type Props = LinkProps & {
   children: ReactNode;
+  color: `white` | `red-600`;
 };
 
-export function Link({ children, className, ...props }: Props) {
+export function Link({
+  children,
+  color = "red-600",
+  className,
+  ...props
+}: Props) {
   return (
     <NextLink {...props}>
-      <a className="text-red-600">{children}</a>
+      <a className={`text-${color}`}>{children}</a>
     </NextLink>
   );
 }
