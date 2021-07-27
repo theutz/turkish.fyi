@@ -10,6 +10,7 @@
     "build:watch": "tsc --watch --noEmit"
   },
   "dependencies": {
+    "@tailwindcss/typography": "^0.4.1",
     "classnames": "^2.3.1",
     "constate": "^3.3.0",
     "next": "11.0.1",
