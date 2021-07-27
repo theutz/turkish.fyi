@@ -59,15 +59,21 @@ export function PostpositionsTable() {
       </thead>
       <tbody>
         {data.map(
-          ({ word: [word, definition], kind, group, root, examples }) => {
+          ({
+            word: [word, definition],
+            kind,
+            group,
+            root: [root, rootDef] = [],
+            examples,
+          }) => {
             return (
               <tr key={word}>
                 <Cell>{word}</Cell>
                 <Cell>{definition}</Cell>
                 <Cell>{kind}</Cell>
                 <Cell>{group}</Cell>
-                <Cell>{root?.[0]}</Cell>
-                <Cell>{root?.[1]}</Cell>
+                <Cell>{root}</Cell>
+                <Cell>{rootDef}</Cell>
                 <Cell>{examples}</Cell>
               </tr>
             );

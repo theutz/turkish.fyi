@@ -3,8 +3,10 @@ type Translation = readonly [string, string | readonly string[]];
 type Kind = "bare" | "posessive";
 
 type Postposition = {
-  kind: Kind;
   word: Translation;
+  kind: Kind;
+  group: string;
+  root?: Translation;
   examples: readonly Translation[];
 } & (
   | {
