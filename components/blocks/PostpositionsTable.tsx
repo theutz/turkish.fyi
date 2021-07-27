@@ -1,81 +1,78 @@
 import { ReactNode } from "react";
 import { postpositions as data } from "../../data/postpositions";
 
-function Cell({ children }: { children: ReactNode }) {
-  switch (typeof children) {
-    case "string": {
-      return <td>{children}</td>;
-    }
-    case "object": {
-      if (Array.isArray(children)) {
-        if (children.every(Array.isArray)) {
-          return (
-            <td>
-              {children.map(([turkish, english]) => (
-                <div key={english}>
-                  <p>{turkish}</p>
-                  <p> {english}</p>
-                </div>
-              ))}
-            </td>
-          );
-        }
-        return (
-          <td>
-            <ul>
-              {children.map((c, i) => (
-                <li key={i}>{c}</li>
-              ))}
-            </ul>
-          </td>
-        );
-      }
-
-      return null;
-    }
-    case "undefined": {
-      return <td></td>;
-    }
-    default: {
-      throw new Error(`Unknown child: ${typeof children}`);
-    }
-  }
-}
-
 export function PostpositionsTable() {
   return (
     <table className="border-collapse table-auto">
       <thead>
-        <tr className="border-b border-gray-400">
+        <tr className="border-b border-gray-400 text-left">
           <th>Word</th>
           <th>Definition</th>
           <th>Kind</th>
           <th>Group</th>
-          <th>Root</th>
-          <th>Root Definition</th>
+          <th colSpan={2}>Root</th>
           <th colSpan={2}>Examples</th>
         </tr>
       </thead>
       <tbody>
         {data.map(
           ({
-            word: [word, definition],
+            word: [word, definition = []],
             kind,
             group,
-            root: [root, rootDef] = [],
-            examples,
+            root: [root, rootDef = []] = [],
+            examples = [],
           }) => {
-            return (
-              <tr key={word} className="border-b border-b-gray-200">
-                <Cell>{word}</Cell>
-                <Cell>{definition}</Cell>
-                <Cell>{kind}</Cell>
-                <Cell>{group}</Cell>
-                <Cell>{root}</Cell>
-                <Cell>{rootDef}</Cell>
-                <Cell>{examples}</Cell>
-              </tr>
-            );
+            const longest = [definition, examples, rootDef].sort((a, b) =>
+              a.length < b.length ? 1 : a.length > b.length ? -1 : 0
+            )[0].length;
+            return Array.from({ length: longest }, (_, i) => i).map((i) => {
+              return (
+                <tr
+                  key={`${word}-${kind}-${group}`}
+                  className="border-b border-b-gray-200"
+                >
+                  {i === 0 && <td rowSpan={longest}>{word}</td>}
+                  {i + 1 <= definition.length && (
+                    <td
+                      rowSpan={
+                        i + 1 === definition.length
+                          ? longest - definition.length + 1
+                          : 1
+                      }
+                    >
+                      {definition[i]}
+                    </td>
+                  )}
+                  {i === 0 && <td rowSpan={longest}>{kind}</td>}
+                  {i === 0 && <td rowSpan={longest}>{group}</td>}
+                  {i === 0 && <td rowSpan={longest}>{root}</td>}
+                  <td rowSpan={1}>{rootDef}</td>
+                  {i + 1 <= examples.length && (
+                    <>
+                      <td
+                        rowSpan={
+                          i + 1 === examples.length
+                            ? longest - examples.length + 1
+                            : 1
+                        }
+                      >
+                        {examples[i]?.[0]}
+                      </td>
+                      <td
+                        rowSpan={
+                          i + 1 === examples.length
+                            ? longest - examples.length + 1
+                            : 1
+                        }
+                      >
+                        {examples[i]?.[1]?.[0]}
+                      </td>
+                    </>
+                  )}
+                </tr>
+              );
+            });
           }
         )}
       </tbody>
