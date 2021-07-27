@@ -29,7 +29,7 @@ export function PostpositionsTable() {
             return Array.from({ length: longest }, (_, i) => i).map((i) => {
               return (
                 <tr
-                  key={`${word}-${kind}-${group}`}
+                  key={`${word}-${kind}-${group}-${i}`}
                   className="border-b border-b-gray-200"
                 >
                   {i === 0 && <td rowSpan={longest}>{word}</td>}

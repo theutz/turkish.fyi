@@ -1,0 +1,1595 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`works 1`] = `
+<DocumentFragment>
+  <table
+    class="border-collapse table-auto"
+  >
+    <thead>
+      <tr
+        class="border-b border-gray-400 text-left"
+      >
+        <th>
+          Word
+        </th>
+        <th>
+          Definition
+        </th>
+        <th>
+          Kind
+        </th>
+        <th>
+          Group
+        </th>
+        <th
+          colspan="2"
+        >
+          Root
+        </th>
+        <th
+          colspan="2"
+        >
+          Examples
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe kadar ...
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          doğru
+        </td>
+        <td
+          rowspan="2"
+        >
+          towards (time/place)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          üçe doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards 3 o'clock
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          eve doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards home
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to
+        </td>
+        <td
+          rowspan="3"
+        >
+          bare
+        </td>
+        <td
+          rowspan="3"
+        >
+          dative
+        </td>
+        <td
+          rowspan="3"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sana göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to you
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          compared with
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          İngeltere'ye göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          compared with England
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          right for
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          bize göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          right for us
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until, by (time)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sabah kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until morning
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          as far as (place)
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ankara'ya kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as far as Ankara
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          üstünde
+        </td>
+        <td
+          rowspan="1"
+        >
+          on
+        </td>
+        <td
+          rowspan="3"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="3"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="3"
+        >
+          üst
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+        <td
+          rowspan="3"
+        >
+          Gerekli olan her şey masanın üstünde.
+        </td>
+        <td
+          rowspan="3"
+        >
+          Everything necessary is on the table
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          on top of
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          above
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          arasında
+        </td>
+        <td
+          rowspan="1"
+        >
+          between
+        </td>
+        <td
+          rowspan="2"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="2"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="2"
+        >
+          ara
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+        <td
+          rowspan="2"
+        >
+          Migros'la Ulus sineması arasında başka bina yok
+        </td>
+        <td
+          rowspan="2"
+        >
+          There is no other building between Migros and the Ulus cinema
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          among
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
+
+exports[`works: 
+<DocumentFragment>
+  <table
+    class="border-collapse table-auto"
+  >
+    <thead>
+      <tr
+        class="border-b border-gray-400 text-left"
+      >
+        <th>
+          Word
+        </th>
+        <th>
+          Definition
+        </th>
+        <th>
+          Kind
+        </th>
+        <th>
+          Group
+        </th>
+        <th
+          colspan="2"
+        >
+          Root
+        </th>
+        <th
+          colspan="2"
+        >
+          Examples
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe kadar ...
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          doğru
+        </td>
+        <td
+          rowspan="2"
+        >
+          towards (time/place)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          üçe doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards 3 o'clock
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          eve doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards home
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to
+        </td>
+        <td
+          rowspan="3"
+        >
+          bare
+        </td>
+        <td
+          rowspan="3"
+        >
+          dative
+        </td>
+        <td
+          rowspan="3"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sana göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to you
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          compared with
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          İngeltere'ye göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          compared with England
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          right for
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          bize göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          right for us
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until, by (time)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sabah kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until morning
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          as far as (place)
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ankara'ya kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as far as Ankara
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          üstünde
+        </td>
+        <td
+          rowspan="1"
+        >
+          on
+        </td>
+        <td
+          rowspan="3"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="3"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="3"
+        >
+          üst
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+        <td
+          rowspan="3"
+        >
+          Gerekli olan her şey masanın üstünde.
+        </td>
+        <td
+          rowspan="3"
+        >
+          Everything necessary is on the table
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          on top of
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          above
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          arasında
+        </td>
+        <td
+          rowspan="1"
+        >
+          between
+        </td>
+        <td
+          rowspan="2"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="2"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="2"
+        >
+          ara
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+        <td
+          rowspan="2"
+        >
+          Migros'la Ulus sineması arasında başka bina yok
+        </td>
+        <td
+          rowspan="2"
+        >
+          There is no other building between Migros and the Ulus cinema
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          among
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+ 1`] = `
+<DocumentFragment>
+  <table
+    class="border-collapse table-auto"
+  >
+    <thead>
+      <tr
+        class="border-b border-gray-400 text-left"
+      >
+        <th>
+          Word
+        </th>
+        <th>
+          Definition
+        </th>
+        <th>
+          Kind
+        </th>
+        <th>
+          Group
+        </th>
+        <th
+          colspan="2"
+        >
+          Root
+        </th>
+        <th
+          colspan="2"
+        >
+          Examples
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe gibi
+        </td>
+        <td
+          rowspan="1"
+        >
+          like Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe için
+        </td>
+        <td
+          rowspan="1"
+        >
+          for Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe ile
+        </td>
+        <td
+          rowspan="1"
+        >
+          with Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as
+        </td>
+        <td
+          rowspan="1"
+        >
+          bare
+        </td>
+        <td
+          rowspan="1"
+        >
+          none/genitive
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ayşe kadar ...
+        </td>
+        <td
+          rowspan="1"
+        >
+          as ... as Ayşe
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          doğru
+        </td>
+        <td
+          rowspan="2"
+        >
+          towards (time/place)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          üçe doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards 3 o'clock
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          eve doğru
+        </td>
+        <td
+          rowspan="1"
+        >
+          towards home
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to
+        </td>
+        <td
+          rowspan="3"
+        >
+          bare
+        </td>
+        <td
+          rowspan="3"
+        >
+          dative
+        </td>
+        <td
+          rowspan="3"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sana göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          according to you
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          compared with
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          İngeltere'ye göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          compared with England
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          right for
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          bize göre
+        </td>
+        <td
+          rowspan="1"
+        >
+          right for us
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until, by (time)
+        </td>
+        <td
+          rowspan="2"
+        >
+          bare
+        </td>
+        <td
+          rowspan="2"
+        >
+          dative
+        </td>
+        <td
+          rowspan="2"
+        />
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          sabah kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          until morning
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          as far as (place)
+        </td>
+        <td
+          rowspan="1"
+        />
+        <td
+          rowspan="1"
+        >
+          Ankara'ya kadar
+        </td>
+        <td
+          rowspan="1"
+        >
+          as far as Ankara
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="3"
+        >
+          üstünde
+        </td>
+        <td
+          rowspan="1"
+        >
+          on
+        </td>
+        <td
+          rowspan="3"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="3"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="3"
+        >
+          üst
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+        <td
+          rowspan="3"
+        >
+          Gerekli olan her şey masanın üstünde.
+        </td>
+        <td
+          rowspan="3"
+        >
+          Everything necessary is on the table
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          on top of
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          above
+        </td>
+        <td
+          rowspan="1"
+        >
+          top
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="2"
+        >
+          arasında
+        </td>
+        <td
+          rowspan="1"
+        >
+          between
+        </td>
+        <td
+          rowspan="2"
+        >
+          posessive
+        </td>
+        <td
+          rowspan="2"
+        >
+          spatial
+        </td>
+        <td
+          rowspan="2"
+        >
+          ara
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+        <td
+          rowspan="2"
+        >
+          Migros'la Ulus sineması arasında başka bina yok
+        </td>
+        <td
+          rowspan="2"
+        >
+          There is no other building between Migros and the Ulus cinema
+        </td>
+      </tr>
+      <tr
+        class="border-b border-b-gray-200"
+      >
+        <td
+          rowspan="1"
+        >
+          among
+        </td>
+        <td
+          rowspan="1"
+        >
+          spaceinterval
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</DocumentFragment>
+`;
