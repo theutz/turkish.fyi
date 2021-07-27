@@ -44,16 +44,16 @@ function Cell({ children }: { children: ReactNode }) {
 
 export function PostpositionsTable() {
   return (
-    <table>
+    <table className="border-collapse table-auto">
       <thead>
-        <tr>
+        <tr className="border-b border-gray-400">
           <th>Word</th>
           <th>Definition</th>
           <th>Kind</th>
           <th>Group</th>
           <th>Root</th>
           <th>Root Definition</th>
-          <th>Examples</th>
+          <th colSpan={2}>Examples</th>
         </tr>
       </thead>
       <tbody>
@@ -66,7 +66,7 @@ export function PostpositionsTable() {
             examples,
           }) => {
             return (
-              <tr key={word}>
+              <tr key={word} className="border-b border-b-gray-200">
                 <Cell>{word}</Cell>
                 <Cell>{definition}</Cell>
                 <Cell>{kind}</Cell>

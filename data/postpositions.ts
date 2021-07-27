@@ -45,6 +45,37 @@ const bareNoneOrGenitive: Postpositions = [
   },
 ];
 
+const bareDative: Postpositions = [
+  {
+    word: ["doğru", "towards (time/place)"],
+    kind: "bare",
+    group: "dative",
+    examples: [
+      ["üçe doğru", "towards 3 o'clock"],
+      ["eve doğru", "towards home"],
+    ],
+  },
+  {
+    word: ["göre", ["according to", "compared with", "right for"]],
+    kind: "bare",
+    group: "dative",
+    examples: [
+      ["sana göre", "according to you"],
+      ["İngeltere'ye göre", "compared with England"],
+      ["bize göre", "right for us"],
+    ],
+  },
+  {
+    word: ["kadar", ["until, by (time)", "as far as (place)"]],
+    kind: "bare",
+    group: "dative",
+    examples: [
+      ["sabah kadar", "until morning"],
+      ["Ankara'ya kadar", "as far as Ankara"],
+    ],
+  },
+];
+
 const posessiveSpatial: Postpositions = [
   {
     word: ["üstünde", ["on", "on top of", "above"]],
@@ -74,5 +105,6 @@ const posessiveSpatial: Postpositions = [
 
 export const postpositions: Postpositions = [
   ...bareNoneOrGenitive,
+  ...bareDative,
   ...posessiveSpatial,
 ];
