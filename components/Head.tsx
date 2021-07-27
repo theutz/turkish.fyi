@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { useSiteTitle, useSiteDescription } from "../hooks/useSiteData";
 import NextHead from "next/head";
 
