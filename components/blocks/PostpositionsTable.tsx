@@ -1,7 +1,11 @@
-import { ReactNode } from "react";
-import { postpositions as data } from "../../data/postpositions";
+import { Postpositions } from "../../data/postpositions";
 
-export function PostpositionsTable() {
+type Props = {
+  data?: Postpositions;
+};
+
+export function PostpositionsTable({ data = [] }: Props) {
+  if (data.length === 0) return null;
   return (
     <table className="border-collapse table-auto">
       <thead>

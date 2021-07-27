@@ -1,5 +1,6 @@
 import PostpositionsTable from '../components/blocks/PostpositionsTable.tsx'
 import Article from '../components/Article'
+import { postpositions } from '../data/postpositions.ts'
 
 <Article isProse>
 
@@ -17,4 +18,4 @@ There are a few sub-divisions of postpositions worth discussing:
 
 </Article>
 
-<PostpositionsTable />
+<PostpositionsTable data={postpositions} />

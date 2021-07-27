@@ -2,7 +2,7 @@ type Translation = readonly [string, readonly string[]];
 
 type Kind = "bare" | "posessive";
 
-type Postposition = {
+export type Postposition = {
   word: Translation;
   kind: Kind;
   group: string;
@@ -16,7 +16,7 @@ type Postposition = {
   | { kind: "posessive"; group: "spatial" | "abstract"; root: Translation }
 );
 
-type Postpositions = readonly Postposition[];
+export type Postpositions = readonly Postposition[];
 
 const bareNoneOrGenitive: Postpositions = [
   {
