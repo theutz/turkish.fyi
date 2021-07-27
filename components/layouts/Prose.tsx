@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import Container from "../Container";
 import Head from "../Head";
 import Header from "../Header";
+import Article from "../Article";
 
 type Props = {
   children: ReactNode;
@@ -13,7 +14,7 @@ export function Prose({ children }: Props) {
       <Head />
       <Header />
       <Container>
-        <article className="prose">{children}</article>
+        <Article isProse>{children}</Article>
       </Container>
     </>
   );
