@@ -1,10 +1,59 @@
 import { render, screen } from "@testing-library/react";
-import { PostpositionsTable as Sut } from "./PostpositionsTable";
+import {
+  PostpositionsTable as Sut,
+  getLongestArray,
+  makeTestIdFactory,
+} from "./PostpositionsTable";
 import { Postpositions } from "../../data/postpositions";
 
 test("matches the snapshot", () => {
   const { asFragment } = render(<Sut />);
   expect(asFragment()).toMatchSnapshot();
+});
+
+describe(`getLongestArray`, () => {
+  test(`gets the length of the longest array`, () => {
+    const definition = Array.from({ length: 20 }, (_, i) => i);
+    const examples = ["1"];
+    const rootDef: string[] = [];
+
+    const result = getLongestArray(examples, definition, rootDef);
+
+    expect(result).toBe(20);
+  });
+});
+
+describe(`makeTestIdFactory`, () => {
+  const word = "üstünde";
+  const kind = "bare";
+  const group = "dative";
+  const field = "kind";
+
+  describe.each`
+    i    | j
+    ${0} | ${0}
+    ${1} | ${0}
+    ${0} | ${1}
+    ${1} | ${1}
+  `("i = $i, j = $j", ({ i, j }) => {
+    test(`row`, () => {
+      const result = makeTestIdFactory(word, kind, group, i)()();
+
+      expect(result).toEqual(`${word}-${kind}-${group}-${i}`);
+    });
+
+    test(`cell`, () => {
+      const result = makeTestIdFactory(word, kind, group, i)(field)();
+
+      expect(result).toEqual(`${word}-${kind}-${group}-${i}-${field}`);
+    });
+
+    test(`cell with iteration`, () => {
+      const result = makeTestIdFactory(word, kind, group, i)(field)(j);
+
+      expect(result).toEqual(`${word}-${kind}-${group}-${i}-${field}-${j}`);
+    });
+  });
 });
 
 describe("bare kind", () => {
