@@ -1,6 +1,10 @@
-type Translation = readonly [string, readonly string[]];
+export type Translation = readonly [string, readonly string[]];
 
-type Kind = "bare" | "posessive";
+export type Kind = "bare" | "posessive";
+
+export type BareGroup = "none/genitive" | "dative" | "ablative";
+
+export type PosessiveGroup = "spatial" | "abstract";
 
 export type Postposition = {
   word: Translation;
@@ -11,9 +15,9 @@ export type Postposition = {
 } & (
   | {
       kind: "bare";
-      group: "none/genitive" | "dative" | "ablative";
+      group: BareGroup;
     }
-  | { kind: "posessive"; group: "spatial" | "abstract"; root: Translation }
+  | { kind: "posessive"; group: PosessiveGroup; root: Translation }
 );
 
 export type Postpositions = readonly Postposition[];
