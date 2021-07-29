@@ -1,0 +1,30 @@
+{
+  "*.ts": {
+    "alternate": "{}.test.ts",
+    "related": "{dirname}/__snapshots__/{basename}.test.ts.snap",
+    "type": "source"
+  },
+  "*.tsx": {
+    "alternate": "{}.test.tsx",
+    "related": "{dirname}/__snapshots__/{basename}.test.tsx.snap",
+    "type": "source"
+  },
+  "*.test.ts": {
+    "alternate": "{}.ts",
+    "related": "{dirname}/__snapshots__/{basename}.ts.snap",
+    "type": "test"
+  },
+  "*.test.tsx": {
+    "alternate": "{}.tsx",
+    "related": "{dirname}/__snapshots__/{basename}.tsx.snap",
+    "type": "test"
+  },
+  "**/__snapshots__/*.test.ts.snap": {
+    "related": ["{dirname}/{basename}.ts", "{dirname}/{basename}.test.ts"],
+    "type": "snap"
+  },
+  "**/__snapshots__/*.test.tsx.snap": {
+    "related": ["{dirname}/{basename}.tsx", "{dirname}/{basename}.test.tsx"],
+    "type": "snap"
+  }
+}
