@@ -1,4 +1,4 @@
-import { HTMLProps, ReactNode } from "react";
+import { HTMLProps, ReactNode, useCallback, useEffect, useState } from "react";
 import { Postpositions, Translation } from "../../data/postpositions";
 
 type Props = {
@@ -14,19 +14,39 @@ function TH({
   return isVisible ? <th {...props} /> : null;
 }
 
+export function useFieldVisibility() {
+  const defaultFields = ["word", "root", "examples", "kind", "group"];
+  const [fields, setFields] = useState(defaultFields);
+
+  const isVisible = (field: typeof defaultFields[0]) => fields.includes(field);
+  const hideField = (field: typeof defaultFields[0]) => {
+    setFields((prev) => prev.filter((f) => f !== field));
+  };
+
+  return { isVisible, hideField };
+}
+
 export function PostpositionsTable({ data = [] }: Props) {
+  const { isVisible, hideField } = useFieldVisibility();
+
   if (data.length === 0) return null;
 
   return (
     <table className="border-collapse table-auto">
       <thead>
         <tr className="text-left border-b border-gray-400">
-          <TH>Word</TH>
-          <TH>Definition</TH>
-          <TH>Kind</TH>
-          <TH>Group</TH>
-          <TH colSpan={2}>Root</TH>
-          <TH colSpan={2}>Examples</TH>
+          <TH isVisible={isVisible("word")} onClick={() => hideField("word")}>
+            Word
+          </TH>
+          <TH isVisible={isVisible("word")}>Definition</TH>
+          <TH isVisible={isVisible("kind")}>Kind</TH>
+          <TH isVisible={isVisible("group")}>Group</TH>
+          <TH isVisible={isVisible("root")} colSpan={2}>
+            Root
+          </TH>
+          <TH isVisible={isVisible("examples")} colSpan={2}>
+            Examples
+          </TH>
         </tr>
       </thead>
       <tbody>
@@ -52,13 +72,27 @@ export function PostpositionsTable({ data = [] }: Props) {
                   data-testid={rowId}
                   className="border-b border-b-gray-200"
                 >
-                  <Cell fieldName="word">{word}</Cell>
-                  <Cell fieldName="definition">{definition}</Cell>
-                  <Cell fieldName="kind">{kind}</Cell>
-                  <Cell fieldName="group">{group}</Cell>
-                  <Cell fieldName="root">{root}</Cell>
-                  <Cell fieldName="rootDef">{rootDef}</Cell>
-                  <Cell fieldName="examples">{examples}</Cell>
+                  <Cell isVisible={isVisible("word")} fieldName="word">
+                    {word}
+                  </Cell>
+                  <Cell isVisible={isVisible("word")} fieldName="definition">
+                    {definition}
+                  </Cell>
+                  <Cell isVisible={isVisible("kind")} fieldName="kind">
+                    {kind}
+                  </Cell>
+                  <Cell isVisible={isVisible("group")} fieldName="group">
+                    {group}
+                  </Cell>
+                  <Cell isVisible={isVisible("root")} fieldName="root">
+                    {root}
+                  </Cell>
+                  <Cell isVisible={isVisible("root")} fieldName="rootDef">
+                    {rootDef}
+                  </Cell>
+                  <Cell isVisible={isVisible("examples")} fieldName="examples">
+                    {examples}
+                  </Cell>
                 </tr>
               );
             });

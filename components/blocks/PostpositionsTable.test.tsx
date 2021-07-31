@@ -1,14 +1,30 @@
 import { render, screen } from "@testing-library/react";
+import { renderHook, act } from "@testing-library/react-hooks";
 import {
   PostpositionsTable as Sut,
   getLongestArray,
   makeTestIdFactory,
+  useFieldVisibility,
 } from "./PostpositionsTable";
 import { Postpositions } from "../../data/postpositions";
 
 test("matches the snapshot", () => {
   const { asFragment } = render(<Sut />);
   expect(asFragment()).toMatchSnapshot();
+});
+
+describe(`useFieldVisibility`, () => {
+  test("with no input", () => {
+    const { result } = renderHook(() => useFieldVisibility());
+
+    expect(result.current.isVisible("word")).toBe(true);
+
+    act(() => {
+      result.current.hideField("word");
+    });
+
+    expect(result.current.isVisible("word")).toBe(false);
+  });
 });
 
 describe(`getLongestArray`, () => {
