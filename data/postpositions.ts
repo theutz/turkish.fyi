@@ -233,9 +233,27 @@ const posessiveSpatial: Postpositions = [
   },
 ];
 
+const posessiveAbstract: Postpositions = [
+  {
+    root: ["açı", ["angle"]],
+    word: ["açısından", ["from the point of view of"]],
+    kind: "posessive",
+    group: "abstract",
+    examples: [["", [""]]],
+  },
+  {
+    root: ["bakım", ["view"]],
+    word: ["bakımından", ["in terms of"]],
+    kind: "posessive",
+    group: "abstract",
+    examples: [["", [""]]],
+  },
+];
+
 export const postpositions: Postpositions = [
   ...bareNoneOrGenitive,
   ...bareDative,
   ...bareAblative,
   ...posessiveSpatial,
+  ...posessiveAbstract,
 ];
