@@ -1,8 +1,18 @@
+import { HTMLProps, ReactNode } from "react";
 import { Postpositions, Translation } from "../../data/postpositions";
 
 type Props = {
   data?: Postpositions;
 };
+
+function TH({
+  isVisible = true,
+  ...props
+}: {
+  isVisible?: boolean;
+} & HTMLProps<HTMLTableHeaderCellElement>) {
+  return isVisible ? <th {...props} /> : null;
+}
 
 export function PostpositionsTable({ data = [] }: Props) {
   if (data.length === 0) return null;
@@ -11,12 +21,12 @@ export function PostpositionsTable({ data = [] }: Props) {
     <table className="border-collapse table-auto">
       <thead>
         <tr className="text-left border-b border-gray-400">
-          <th>Word</th>
-          <th>Definition</th>
-          <th>Kind</th>
-          <th>Group</th>
-          <th colSpan={2}>Root</th>
-          <th colSpan={2}>Examples</th>
+          <TH>Word</TH>
+          <TH>Definition</TH>
+          <TH>Kind</TH>
+          <TH>Group</TH>
+          <TH colSpan={2}>Root</TH>
+          <TH colSpan={2}>Examples</TH>
         </tr>
       </thead>
       <tbody>
@@ -70,10 +80,16 @@ function makeCellComponentFactory(longestEntryLength: number) {
     return function Cell({
       children,
       fieldName,
+      isVisible = true,
     }: {
       children?: string | readonly string[] | readonly Translation[];
       fieldName: string;
+      isVisible?: boolean;
     }) {
+      if (!isVisible) {
+        return null;
+      }
+
       const id = makeTestId(fieldName)();
 
       if (["string", "undefined"].includes(typeof children)) {
